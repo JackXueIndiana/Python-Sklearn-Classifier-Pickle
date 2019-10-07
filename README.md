@@ -8,9 +8,9 @@ We use Azure Data Lake Storage Gen 2 (ADLSG2) File System for storing all the fi
 - Model - dir pkl file
 
 We use Azure Databricks with a cluster of version 6.0 (includes Apache Spark 2.4.3, Scala 2.11). Under project folder in Workspace, our python notebooks are saved in three sub folders: 
-1. train - the model training and saving
-2. score - the model loading and scoring
-3. test - reserved for unit tests
+- train - the model training and saving
+- score - the model loading and scoring
+- test - reserved for unit tests
 
 The ADLSG2 is mounted to the Azure Databricks workspace.
 
