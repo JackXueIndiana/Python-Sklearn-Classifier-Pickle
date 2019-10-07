@@ -14,4 +14,11 @@ We use Azure Databricks with a cluster of version 6.0 (includes Apache Spark 2.4
 
 The ADLSG2 is mounted to the Azure Databricks workspace.
 
+## Dataset
+The dataset is from the example of "https://raw.githubusercontent.com/callxpert/datasets/master/Loan-applicant-details.csv". 
+
+## Pickle Library
+This libaray has been pre-installed in the Azure Databricks Python runtime. The code examples can be found in https://dataaspirant.com/2017/02/13/save-scikit-learn-models-with-python-pickle/
+
+
 
