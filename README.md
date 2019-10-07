@@ -2,7 +2,7 @@
 This article shows you how to create a classification model with Python and Sklearn in Azure Databricks and save/load the model by using Pickle library.
 
 ## Problem Statement
-We model the loan application as a two-class classification problem: Based the historical applications with a number of features, the application may approved or denied. Logistic Regression method is used in this excercise. 
+We model the loan application as a two-class classification problem: Based the historical applications with a number of features, the application may approved or denied. Logistic Regression method is used in this exercise. 
 
 After the LR model is trained based the historical dataset, we want to save the model for use in different time and location. Thus, the Pickle library is employed to do so.
 
@@ -19,13 +19,14 @@ We use Azure Databricks with a cluster of version 6.0 (includes Apache Spark 2.4
 - score - the model loading and scoring
 - test - reserved for unit tests
 
-The ADLSG2 is mounted to the Azure Databricks workspace.
+The ADLSG2 is mounted to the Azure Databricks workspace by following this document: https://docs.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-use-databricks-spark
 
 ## Dataset
 The dataset is from the example of "https://raw.githubusercontent.com/callxpert/datasets/master/Loan-applicant-details.csv". 
 
 ## Pickle Library
-This libaray has been pre-installed in the Azure Databricks Python runtime. The code examples can be found in https://dataaspirant.com/2017/02/13/save-scikit-learn-models-with-python-pickle/
+This library has been pre-installed in the Azure Databricks Python runtime. The code examples can be found in https://dataaspirant.com/2017/02/13/save-scikit-learn-models-with-python-pickle/
+
 
 
 
