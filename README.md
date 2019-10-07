@@ -1,6 +1,13 @@
 # Python-Sklearn-Classifier-Pickle
 This article shows you how to create a classification model with Python and Sklearn in Azure Databricks and save/load the model by using Pickle library.
 
+## Problem Statement
+We model the loan application as a two-class classification problem: Based the historical applications with a number of features, the application may approved or denied. Logistic Regression method is used in this excercise. 
+
+After the LR model is trained based the historical dataset, we want to save the model for use in different time and location. Thus, the Pickle library is employed to do so.
+
+> The pickle library implements a fundamental, but powerful algorithm for serializing and de-serializing a Python object structure. “Pickling” is the process whereby a Python object hierarchy is converted into a byte stream, and “unpickling” is the inverse operation, whereby a byte stream is converted back into an object hierarchy. Pickling (and unpickling) is alternatively known as “serialization”, “marshalling,” 1 or “flattening”, however, to avoid confusion, the terms used here are “pickling” and “unpickling”.
+
 ## Environment
 We use Azure Data Lake Storage Gen 2 (ADLSG2) File System for storing all the files. Under project folder, there are three sub-folders:
 - Input - dir for input file
