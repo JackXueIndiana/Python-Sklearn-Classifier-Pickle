@@ -1,4 +1,4 @@
-# Python-Sklearn-Classifier-Pickle
+# Python-Sklearn-Classifier-Pickle-Dash-PowerBI
 This article shows you how to create a classification model with Python and Sklearn in Azure Databricks and save/load the model by using Pickle library.
 
 ## Problem Statement
@@ -27,6 +27,17 @@ The dataset is from the example of "https://raw.githubusercontent.com/callxpert/
 ## Pickle Library
 This library has been pre-installed in the Azure Databricks Python runtime. The code examples can be found in https://dataaspirant.com/2017/02/13/save-scikit-learn-models-with-python-pickle/
 
+## Method
+After the minimal data preprocessing, we use 80% of the dataset to train Sklearn LogisticRegression model. The training result is validated by the 20% fo remaining dataset with an accuracy of 0.7. Afterward the model is saved as pkl file in DBFS.
+
+The model has been consumed by another notebook. In it we first load the pkl file, and then we use the whole dataset to run through the model to pretend regression test the model with an unseen dataset. This time we get an accuracy of 0.8.
+
+The resulted dataset, aka, the original dataset with a new column, called predictions, is saved as a CSV file in DBFS. Also a permanent table is created based on the file for Power BI to use.
+
+## Presentation
+The results are presented by Power BI Desktop and Power BI web. At this moment, Power BI Desktop has a ADLSG2 connector, by using it, we created a pbix file and publish in powerBI.com. However, the connector is in Beta version and does not support refreshing. We heard that once the connector GA-ed, the refreshing will be supported.
+
+The results are also presented in a Databricks Dashboard built on the top of a notebook. We can distribute the URL of of dashboard's presentation so everyone who has access to the Databricks worksppace will be able to run this dashboard which predict one loan application at a time by loading the model and scoring the user entry.
 
 
 
