@@ -35,9 +35,9 @@ The model has been consumed by another notebook. In it we first load the pkl fil
 The resulted dataset, aka, the original dataset with a new column, called predictions, is saved as a CSV file in DBFS. Also a permanent table is created based on the file for Power BI to use.
 
 ## Presentation
-The results are presented by Power BI Desktop and Power BI web. At this moment, Power BI Desktop has a ADLSG2 connector, by using it, we created a pbix file and publish in powerBI.com. However, the connector is in Beta version and does not support refreshing. We heard that once the connector GA-ed, the refreshing will be supported.
+The results are presented by Power BI Desktop and Power BI web (https://blog.barnalytics.uk/2019/08/13/connecting-power-bi-to-adls-gen2/). At this moment, Power BI Desktop has a ADLSG2 connector, by using it, we created a pbix file and publish in powerBI.com. However, the connector is in Beta version and does not support refreshing. We heard that once the connector GA-ed, the refreshing will be supported.
 
-The results are also presented in a Databricks Dashboard built on the top of a notebook. We can distribute the URL of of dashboard's presentation so everyone who has access to the Databricks worksppace will be able to run this dashboard which predict one loan application at a time by loading the model and scoring the user entry.
+The results are also presented in a Databricks Dashboard built on the top of a notebook (https://docs.databricks.com/notebooks/dashboards.html). We can distribute the URL of of dashboard's presentation so everyone who has access to the Databricks worksppace will be able to run this dashboard which predict one loan application at a time by loading the model and scoring the user entry.
 
 
 
